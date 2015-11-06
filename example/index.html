@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial;
+                font-size: 14px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Pressing the button bellow will:
+        </p>
+        <ol>
+            <li>load jQuery from CDN</li>
+            <li>check for jQuery and alert you once it's loaded</li>
+        </ol>
+        <p id="log"></p>
+        <input type="button" onclick="window.test='test'; this.disabled = true" value="START" />
+        <script src="../dist/yaasync.js"></script>
+        <script>
+            yaasync.assert(function() {
+                return window.test == 'test';
+            }, 'https://code.jquery.com/jquery-2.1.4.min.js');
+            
+            yaasync.assert('jQuery', function() {
+                jQuery('#log').html('jQuery was succesfully loaded')
+            });
+        </script>
+    </body>
+</html>
