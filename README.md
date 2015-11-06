@@ -1,6 +1,6 @@
 ## Synopsis
 
-yaasync loader od "Yet Another Async" loader is a simple library that will let you load and call your JS synchronically depending on conditions you speciffy. It's a *simple* alternative to using big libraries such as [head.js](http://headjs.com/)
+yaasync loader or "Yet Another Async" loader is a simple library that will let you load and call your JS synchronically depending on conditions you speciffy. It's a *simple* alternative to using big libraries such as [head.js](http://headjs.com/)
 
 ## Code Example
 
