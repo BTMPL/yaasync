@@ -11,5 +11,6 @@
         "async",
         "loader"
     ],
-    "license": "MIT"
+    "license": "MIT",
+	"ignore": []
 }
